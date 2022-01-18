@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(64, 110, 209);
+    padding: 0px 50px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    color: white;
+    top: 0;
+}
+.logo{
+    z-index: 3;
+}
