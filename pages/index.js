@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css'
+import Featured from '../components/Featured';
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
         <meta name="description" content="Boplas E-commerce" />
         <link rel="icon" href="/logo.png" />
       </Head>
-
-    <h1> Home Page</h1>
+      <Featured/>
 
 
     </div>
