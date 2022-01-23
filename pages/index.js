@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css'
 import Featured from '../components/Featured';
+import Products from '../components/Products';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Featured/>
+      <Products/>
 
 
     </div>
