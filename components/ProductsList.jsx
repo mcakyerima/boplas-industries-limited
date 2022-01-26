@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../styles/Product.module.css";
+import styles from "../styles/ProductList.module.css";
 import ProductCards from './ProductCards';
 
 const Products = () => {
@@ -16,6 +16,10 @@ const Products = () => {
           the quick brown fox jumps over the lazy dogs
       </p>
       <div className={styles.wrapper}>
+          <ProductCards/>
+          <ProductCards/>
+          <ProductCards/>
+          <ProductCards/>
           <ProductCards/>
           <ProductCards/>
           <ProductCards/>

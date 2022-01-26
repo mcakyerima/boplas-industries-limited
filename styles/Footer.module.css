@@ -1,0 +1,61 @@
+.Container {
+    height: calc(100vh -500px);
+    background-color: rgb(53, 49, 49);
+    display: flex;
+    color: white;
+}
+
+/* .item:last-child {
+    flex: 1;
+    position: relative;
+    display: flex;
+} */
+
+.item:first-child {
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.card {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 18px;
+    color: rgb(13, 164, 230);
+}
+
+.text {
+    color: lightgrey;
+}
+
+.motto {
+    color: rgb(211 , 211 , 211);
+}
+
+.item:last-child{
+    display:flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    background-color: rgba(2, 2, 2, 0.879);
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(181, 179, 179);
+    display:flex;
+    justify-content: center;
+
+}
+
+.textFooter {
+    font-size: 15px;
+}

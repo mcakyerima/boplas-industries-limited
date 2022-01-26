@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css'
 import Featured from '../components/Featured';
-import Products from '../components/Products';
+import Products from '../components/ProductsList';
 
 export default function Home() {
   return (
