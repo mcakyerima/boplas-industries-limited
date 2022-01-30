@@ -16,8 +16,6 @@ export default function Home() {
       </Head>
       <Featured/>
       <Products/>
-
-
     </div>
     )
     }
