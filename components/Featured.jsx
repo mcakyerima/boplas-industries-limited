@@ -33,20 +33,20 @@ const Featured = () => {
   return (
         <div className={styles.Container}>
             <div className={styles.arrowContainer} style={{left:0}} onClick={() => handleArrow("left")}>
-                <Image src="/img/arrow-left.png" height="80" width="50"  />
+                <Image src="/img/arrow-left.png" height="100" width="50"  />
             </div>
             <div className={styles.wrapper} style={{transform: `translateX(${-100*index}vw)`}}>
                 
                     {images.map((img, index) => (
                         <div className={styles.imgContainer} key={index}>
-                             <Image src={img}  layout="fill" objectFit="contain" style={{transform: `translateX(${-100*index}vw)`}}/>
+                             <Image src={img}  height={300} width={600}   style={{transform: `translateX(${-100*index}vw)`}}/>
                         </div>
                     ))
                     }
                 
             </div>
             <div className={styles.arrowContainer}  style={{right:0}}>
-                <Image src="/img/arrow-right.png" height="80" width="50" style={{left: 0}}  onClick={() => handleArrow("right")} />
+                <Image src="/img/arrow-right.png" height="100" width="50" style={{left: 0}}  onClick={() => handleArrow("right")} />
             </div>
         </div>
   );

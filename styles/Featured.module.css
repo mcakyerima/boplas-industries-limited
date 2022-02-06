@@ -29,6 +29,25 @@
     position: relative;
     height:100%;
     margin: 0 auto;
-    padding: 0;
+    
+    
+}
+
+@media screen and (max-width:400px ) {
+    .Container {
+        height: 200px;
+        padding: 0;
+        margin: 0;
+        background-color: red;
+        position:relative;
+    }
+
+    .arrowContainer {
+        position: absolute;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    
+
     
 }

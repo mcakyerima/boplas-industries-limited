@@ -1,0 +1,148 @@
+.container {
+    background-color: rgb(204, 220, 220);
+    display: flex;
+}
+
+.left {
+    flex:2;
+    padding:50px;
+
+}
+
+.right {
+    flex: 1;
+    padding: 50px;
+}
+
+.wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color:#333;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    color: white;
+}
+
+.totalTextTitle {
+    margin-right: 10px;
+
+}
+
+.button {
+    padding: 6px;
+    background-color:white;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    color: teal;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+/* table */
+
+.table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: InProgress 1s ease infinite alternate;
+}
+
+@keyframes InProgress {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.undone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.undone .checkedIcon, .inProgress .checkedIcon {
+    display: none;
+}
+
+.row:last-child{
+    display: flex;
+    justify-content:space-between;
+}
+
+@media screen and (max-width:400px ) {
+    .container {
+        flex-direction: column;
+    }
+    .trTitle {
+        display: none;
+
+    }
+
+    .tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .id:before {
+        content : "Order Id: ";
+        font-weight: 500;
+    }
+
+    .name:before {
+        content: "Name: ";
+        font-weight: 500;
+    }
+
+    .address:before {
+        content: "Address: ";
+        font-weight: 500;
+    }
+
+    .total:before {
+        content: "Total: ";
+        font-weight: 500;
+    }
+
+    .tr td{
+        margin-bottom: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+    
+    .row:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width: 80vw;
+        margin: 2px auto;
+    }
+
+    .done, .undone , .inProgress {
+        margin-bottom: 20px;
+    }
+}
+

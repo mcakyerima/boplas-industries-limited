@@ -22,8 +22,9 @@
 }
 
 .price {
-    font-weight: 600;
-    color: #6e8cd5;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0a46df;
     border-bottom: solid  2px #6e8cd5;
 }
 
@@ -154,3 +155,71 @@ div.c_white span{
 .button:hover {
     background-color: #436cd2;
 }
+
+@media screen and (max-width: 400px) {
+    .container {
+        height: auto;
+        text-align: center;
+        flex-direction:column;
+        margin-top: 20px;
+
+    }
+
+    .imgContainer {
+        width: 70vw;
+        height: 70vw;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+
+    }
+    .colorOptions {
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .checkbox {
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .options {
+        font-size:16px;
+    }
+
+    .colors div {
+        width: 10px;
+        margin: 1px auto;
+    }
+
+    .colors div span {
+        padding:10px;
+    }
+    .colors {
+        margin:1px auto;
+        width: 30%;
+    }
+    .right {
+        padding-top: 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .header , .choose{
+        font-size: 20px;
+    }
+    .button {
+        width: 140px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    .quantity {
+        padding: 15px;
+        width: 60px;
+        height: 20px;
+    }
+    }

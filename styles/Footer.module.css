@@ -52,10 +52,50 @@
     padding: 5px;
     color: rgb(181, 179, 179);
     display:flex;
+    text-align: center;
     justify-content: center;
 
 }
 
 .textFooter {
     font-size: 15px;
+}
+
+@media  screen and (max-width:400px ){
+.Container {
+    flex-direction: column;
+}
+
+.item {
+    flex-direction: column;
+    
+}
+
+.card .item {
+    flex-direction: row;
+}
+.card .item .logo {
+    margin: 2px auto;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+.text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.item:first-child {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0;
+    margin: 10px auto;
+    padding-top: 10px;
+}
 }

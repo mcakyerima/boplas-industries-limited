@@ -8,17 +8,17 @@ const Footer = () => {
         
         <div className={styles.Container}>
             <div className={styles.item}>
-                 <Image src="/img/logo.png" height="60" width="60"/>
+                 <Image src="/img/logo.png" height="60" width="60" className={styles.logo}/>
             </div>
             <div className={styles.item}>
                 <div className={styles.card}>
                     <div className={styles.motto}>
-                        <h2>OH! YES, WE MANUFACTURE THE BEST PLASTIC PRODUCTS</h2>
+                        <h2 className={styles.title2}>OH! YES, WE MANUFACTURE THE BEST PLASTIC PRODUCTS</h2>
                     </div>
                 </div>
                 <div className={styles.card}>
                         <h1 className={styles.title}>FIND OUT MORE</h1>
-                        <p>
+                        <p className={styles.text}>
                             No. 2 Auno Street,
                             <br/> Maiduguri, 
                             <br/> Borno State

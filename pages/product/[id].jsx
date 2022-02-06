@@ -22,10 +22,10 @@ const Product = () => {
             </div>
         </div>
         <div className={styles.right}>
-            <h1>{product.name}</h1>
+            <h1 className={styles.title}>{product.name}</h1>
             <span className={styles.price}>N{product.price[price]}</span>
             <p className={styles.desc}>{product.desc}</p>
-            <h3 className={styles.choose}>Colors</h3>
+            <h3 className={styles.choose}>Available Colors</h3>
             {/* <div className={styles.colors}>
                 <div className={styles.color}></div>
                 <div className={styles.color}></div>
