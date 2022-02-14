@@ -8,7 +8,7 @@ import mongoose from "mongoose";
      title: {
          type: String,
          required: true,
-         maxLength:50
+         maxlength:50
      },
      desc: {
          type: String,

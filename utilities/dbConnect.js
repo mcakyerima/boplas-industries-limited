@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
-const MONGO_DB_URL = process.env.MONGO_DB_URL
+const MONGO_URL = process.env.MONGO_DB_URL
 
-if (!MONGO_DB_URL) {
-    throw new Error {
-        "please define the MONGO_DB_URL environment variable inside .env.local"
-    }
+if (!MONGO_URL) {
+    throw new Error (
+    "please define the MONGO_URL environment variable inside .env.local"
+
+    )
 }
 
 /**
@@ -29,7 +30,7 @@ async function dbConnect() {
             bufferCommands:false,
         }
 
-        cached.promise = mongoose.connect( MONGO_DB_URL , opts).then((mongoose) => {
+        cached.promise = mongoose.connect( MONGO_URL , opts).then((mongoose) => {
             return mongoose
         })
     }

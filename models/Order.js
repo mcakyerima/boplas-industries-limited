@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
  const OrderSchema = new mongoose.Schema({
      status: {
-         type: Nuber,
+         type: Number,
          default: 0,
      },
      customer: {
