@@ -18,7 +18,9 @@ import mongoose from "mongoose";
          type: String,
          required: true,
      },
-     colors : { type: String, required: true },
+     colors : [{type: [],
+                default: [],
+                required: true}]
      
  }, {timestamps: true});
 
