@@ -1,17 +1,9 @@
 import styles from "/styles/Product.module.css";
-import Image from "next/image"
+import Image from "next/image";
+import axios from "axios";
 import { useState } from "react";
 
-const Product = () => {
-    const product = {
-        id : 1,
-        name : 'BOWL',
-        quantity : 100,
-        desc : "the quick brown fox jumps over the lazy dogs, this is just  an example text describing the product before the actual product description fetched from the api",
-        rating : 2,
-        price : [1500 , 6000 ,6500],
-        img : "/img/bowl.png"
-    };
+const Product = ({product}) => {
 
     const [price , setPrice] = useState(0);
 
@@ -23,7 +15,7 @@ const Product = () => {
         </div>
         <div className={styles.right}>
             <h1 className={styles.title}>{product.name}</h1>
-            <span className={styles.price}>N{product.price[price]}</span>
+            <span className={styles.price}>N{product.prices[price]}</span>
             <p className={styles.desc}>{product.desc}</p>
             <h3 className={styles.choose}>Available Colors</h3>
             {/* <div className={styles.colors}>
@@ -75,4 +67,16 @@ const Product = () => {
     </div>
 };
 
-export default Product;  
+// fetch product using product id and rendering
+
+export const getServerSideProps = async ({params}) => {
+    const response = await axios.get(`http://localhost:3000/api/product/${params.id}`)
+    return {
+      props: {
+        product: response.data
+      }
+    }
+  
+  }
+
+export default Product;
