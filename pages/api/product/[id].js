@@ -4,7 +4,9 @@ import Product from "../../../models/Product";
 export default async function handler(req, res) {
 
     // WE WILL NEED PRODUCT ID TO FETCH, DELETE OR PUT INDIVDUAL PRODUCT
+    console.log(req)
     const { method, query: {id} } = req;
+    console.log(method)
 
     dbConnect()
 

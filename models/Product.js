@@ -1,7 +1,12 @@
 import mongoose from "mongoose";
 
  const ProductSchema = new mongoose.Schema({
-     prices: {
+    color: {
+        type: [Number],
+        required: true
+
+    } ,
+    prices: {
          type: [Number],
          required: true,
      },
@@ -18,11 +23,6 @@ import mongoose from "mongoose";
          type: String,
          required: true,
      },
-     colors : {
-         type : [String],
-         default: [],
-         required: true
-     }
      
  }, {timestamps: true});
 
